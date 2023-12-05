@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".AtualizarDadosTelefone">
+
+    <!-- Título: Telefone -->
+    <TextView
+        android:id="@+id/textPhoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Sub-título: Aba para alteração de número -->
+    <TextView
+        android:id="@+id/textChangeNumberSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPhoneTitle"
+        android:layout_marginTop="8dp"
+        android:text="Aba para alteração de número."
+        android:textSize="14sp" />
+
+    <!-- Campo de Texto: Telefone -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textChangeNumberSubtitle"
+        android:layout_marginTop="16dp"
+        android:hint="Telefone" />
+
+    <!-- Sub-título: Um código de confirmação será enviado para este número -->
+    <TextView
+        android:id="@+id/textConfirmationCodeSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="8dp"
+        android:text="Um código de confirmação será enviado para este número."
+        android:textSize="14sp" />
+
+    <!-- Botão: Atualizar -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textConfirmationCodeSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Atualizar" />
+
+</RelativeLayout>
+

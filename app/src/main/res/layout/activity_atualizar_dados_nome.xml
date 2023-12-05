@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AtualizarDadosNome">
+
+    <!-- Título: Nome -->
+    <TextView
+        android:id="@+id/textTitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Nome"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo: Descrição do Nome -->
+    <TextView
+        android:id="@+id/textSubtitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitleName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:text="Este é o nome que você quer que outras usem quando se referirem a você."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <!-- Campo de texto: Nome -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSubtitleName"
+        android:layout_marginTop="16dp"
+        android:hint="Nome" />
+
+    <!-- Campo de texto: Sobrenome -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:hint="Sobrenome" />
+
+    <!-- Botão: Atualizar -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Atualizar" />
+
+</RelativeLayout>
+

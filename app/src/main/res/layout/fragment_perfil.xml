@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Nome do usuário centralizado -->
+        <TextView
+            android:id="@+id/textUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Samuel Pinheiro"
+            android:textSize="30sp" />
+
+
+
+        <!-- Links para Configurações, Carteira e Gerenciamento de Conta -->
+        <LinearLayout
+            android:id="@+id/linksContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textUserName"
+            android:layout_marginTop="88dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#000000" />
+
+            <!-- Link para Configurações -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_fill"
+                    android:layout_marginStart="26dp"/>
+
+                <TextView
+                    android:id="@+id/textSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Configurações"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#000000" />
+
+            <!-- Link para Carteira -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/credit_card_fill"
+                    android:layout_marginStart="26dp"/>
+
+                <TextView
+                    android:id="@+id/textWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carteira"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <!-- Link para Gerenciamento de Conta -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/user_fill"
+                    android:layout_marginStart="26dp"/>
+
+                <TextView
+                    android:id="@+id/textAccountManagement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gerenciamento de Conta"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

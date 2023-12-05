@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cartão"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageView
+        android:id="@+id/imagem_cartao"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cartao"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome no Cartão"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/nome_cartao"
+            android:layout_width="381dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:background="@drawable/botao_arredondado"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Número do Cartão"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/numero_cartao"
+            android:layout_width="381dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+            android:background="@drawable/botao_arredondado"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Validade"
+                    android:layout_marginBottom="4dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/validade_cartao"
+                    android:layout_width="134dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/botao_arredondado"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CVC"
+                    android:layout_marginBottom="4dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/cvc_cartao"
+                    android:layout_width="134dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/botao_arredondado"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_salvar_cartao"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:text="Salvar Cartão"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@color/roxo"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="86dp"/>
+
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:text="Confirmar"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/roxo"
+        android:layout_marginLeft="86dp"
+        android:layout_marginRight="86dp"/>
+</LinearLayout>

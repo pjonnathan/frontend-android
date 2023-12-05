@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Atividades">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/titulo_atividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atividades"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="16dp">
+
+        <!-- Primeiro registro -->
+        <LinearLayout
+            android:id="@+id/meuContainer02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imagem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carro"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/endereco1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Deputado Oswaldo Studart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/data1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 de Out. • 19:00 AM"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/valor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$17,93"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000" /> <!-- Cor da linha separadora -->
+
+        <!-- Segundo registro (semelhante ao primeiro) -->
+
+        <!-- Segundo registro (semelhante ao primeiro) -->
+        <LinearLayout
+            android:id="@+id/meuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="redirecionarParaOutraTela">
+
+            <ImageView
+                android:id="@+id/imagem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carro"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/endereco2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Av. Deputado Oswaldo Studart"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/data2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16 de Out. • 10:00 AM"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/valor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="R$17,93"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Página Incial"
+        android:id="@+id/pagina_inicial"
+        android:icon="@drawable/home_light"/>
+
+    <item android:title="Serviços"
+        android:id="@+id/servicos"
+        android:icon="@drawable/component__1_"/>
+
+    <item android:title="Atividades"
+        android:id="@+id/ativididades"
+        android:icon="@drawable/calendar_light"/>
+
+    <item android:title="Conta"
+        android:id="@+id/perfil"
+        android:icon="@drawable/user_cicrle_light"/>
+</menu>

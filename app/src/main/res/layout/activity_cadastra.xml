@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/emailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu e-mail:"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="190dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:background="#7B1AF2"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:layout_below="@id/emailLabel"
+        />
+
+    <TextView
+        android:id="@+id/senhaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu Senha:"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:background="#7B1AF2"
+        android:hint="Senha"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_below="@id/senhaLabel"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu nome completo:"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:background="#7B1AF2"
+        android:layout_below="@id/nameLabel"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Nome"/>
+
+    <TextView
+        android:id="@+id/dobLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite sua data de nascimento:"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:background="#7B1AF2"
+        android:layout_below="@id/dobLabel"
+        android:hint="Data de Nascimento"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/cpfLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu CPF:"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/dobEditText"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/cpfEditText"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:background="#7B1AF2"
+        android:layout_below="@id/cpfLabel"
+        android:hint="CPF"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/generoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu gênero:"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/cpfEditText"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:id="@+id/genderLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generoLabel"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/maleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"/>
+
+        <CheckBox
+            android:id="@+id/femaleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino"/>
+
+        <CheckBox
+            android:id="@+id/otherCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outro"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderLinearLayout"
+        android:layout_marginTop="16dp"
+        android:text="Cadastrar"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

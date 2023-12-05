@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AtualizarDadosEmail">
+
+    <!-- Título: E-mail -->
+    <TextView
+        android:id="@+id/textEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="E-mail"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo: Aba para alteração de E-mail -->
+    <TextView
+        android:id="@+id/textSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textEmailTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Aba para alteração de E-mail."
+        android:textSize="14sp"
+        android:textColor="#888888" />
+
+    <!-- Campo E-mail -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textSubtitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="E-mail" />
+
+    <!-- Subtítulo: Um código de confirmação será enviado para este número. -->
+    <TextView
+        android:id="@+id/textConfirmationCodeSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Um código de confirmação será enviado para este e-mail."
+        android:textSize="14sp"
+        android:textColor="#888888" />
+
+    <!-- Botão Atualizar -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textConfirmationCodeSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Atualizar" />
+
+</RelativeLayout>
+
